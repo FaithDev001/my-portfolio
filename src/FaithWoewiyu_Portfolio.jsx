@@ -18,7 +18,7 @@ const PROJECTS = [
       "A Java-based system to manage patients, doctors, and appointments with full CRUD operations and a clean data model.",
     skills: ["OOP", "Data Modeling", "Java"],
     accent: "#4F8EF7",
-    github: "https://github.com/",
+    github: "https://github.com/FaithDev001/hospital-management-system",
   },
   {
     title: "Android Music Player",
