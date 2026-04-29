@@ -21,22 +21,31 @@ const PROJECTS = [
     github: "https://github.com/FaithDev001/hospital-management-system",
   },
   {
-    title: "Android Music Player",
-    icon: "🎵",
+    title: "Student Course Registration System",
+    icon: "🎓",
     description:
-      "A mobile application built in Android Studio for playing and managing music files with a sleek, intuitive UI.",
-    skills: ["Mobile UI Design", "Android APIs", "Java"],
+      "A fullstack CRUD web app for managing students, courses, and registrations. Built with a React frontend and Node.js backend connected via Axios.",
+    skills: ["React", "Node.js", "Axios", "React Router", "JavaScript"],
     accent: "#A259FF",
-    github: "https://github.com/Faith001.com",
+    github: "https://github.com/FaithDev001/student-course",
   },
   {
-    title: "JUnit Testing Suite",
-    icon: "✅",
+    title: "E-Commerce JUnit Testing Site",
+    icon: "🛒",
     description:
-      "A Grade Calculator project with rigorous software quality assurance — zero bugs, 100% test coverage using JUnit.",
-    skills: ["Unit Testing", "Debugging", "SQA"],
+      "A comprehensive Java testing suite for an e-commerce platform, using JUnit and Maven to validate core shopping functionalities with zero defects.",
+    skills: ["Java", "JUnit", "Maven", "SQA", "IntelliJ"],
     accent: "#00C9A7",
-    github: "https://github.com/Faith001.com.",
+    github: "https://github.com/FaithDev001/ecommerce-junit-testing",
+  },
+  {
+    title: "School Management System",
+    icon: "🏫",
+    description:
+      "A Java-based school management application for handling student records, class assignments, and administrative tasks using object-oriented design.",
+    skills: ["Java", "OOP", "Data Modeling", "IntelliJ"],
+    accent: "#F7934F",
+    github: "https://github.com/FaithDev001/school-management-system",
   },
 ];
 
@@ -192,7 +201,7 @@ export default function Portfolio() {
               </p>
               <div className="fade-up-4" style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
                 <button className="btn-primary" onClick={() => scrollTo("Projects")}>View Projects</button>
-                <a className="btn-outline" href="https://github.com/faithwoewiyu3@gmail.com3@gmail.com" target="_blank" rel="noreferrer">GitHub ↗</a>
+                <a className="btn-outline" href="https://github.com/faithwoewiyu" target="_blank" rel="noreferrer">GitHub ↗</a>
                 <button className="btn-outline" onClick={() => scrollTo("Contact")}>Contact Me</button>
               </div>
             </div>
@@ -239,7 +248,7 @@ export default function Portfolio() {
           <span className="section-tag">// Projects</span>
           <h2 style={{ fontSize: "2.2rem", fontWeight: 700, marginBottom: 12 }}>What I've Built</h2>
           <p style={{ color: theme.muted, marginBottom: 48, maxWidth: 520 }}>Real-world projects that demonstrate my skills in Java, mobile development, and software testing.</p>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 28 }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 28 }}>
             {PROJECTS.map((p) => (
               <div key={p.title} className="card-hover" style={{ background: theme.card, border: `1px solid ${theme.border}`, borderRadius: 20, padding: 28, position: "relative", overflow: "hidden" }}>
                 <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 4, background: `linear-gradient(90deg, ${p.accent}, transparent)` }} />
@@ -326,9 +335,9 @@ export default function Portfolio() {
           {/* Social links */}
           <div style={{ display: "flex", gap: 20, marginTop: 40, justifyContent: "center" }}>
             {[
-              { label: "GitHub", url: "https://github.com/Faith001.com", icon: "⌥" },
+              { label: "GitHub", url: "https://github.com/faithwoewiyu", icon: "⌥" },
               { label: "LinkedIn", url: "https://linkedin.com", icon: "in" },
-              { label: "Email", url: "Faith:faithwoewiyu3@gmail.com", icon: "✉" },
+              { label: "Email", url: "mailto:faith@example.com", icon: "✉" },
             ].map((s) => (
               <a key={s.label} href={s.url} target="_blank" rel="noreferrer" style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 6, color: theme.muted, textDecoration: "none", fontSize: "0.8rem", transition: "color 0.2s" }}
                 onMouseEnter={(e) => e.currentTarget.style.color = theme.accent}
